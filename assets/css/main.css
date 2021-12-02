@@ -24,7 +24,9 @@ header {
 header .container {
     max-width: 1400px;
 }
+
 #logo {
+    width: 220px;
     height: auto;
     font-size: 16px;
     text-transform: uppercase;
@@ -43,6 +45,10 @@ header .container {
     margin-top: -4px;
 }
 /* menu header-right */
+#menu {
+    width: 550px;
+    height: 30px;
+}
 #menu, .header-right {
     margin-top: 28px;
 }
@@ -75,11 +81,17 @@ header .container {
 #menu li a i, .header-right li a i {
     margin-top: 4px;
 }
+header .header-right {
+    margin-left: 250px;
+}
 /* search-form */
-header .form-search {
+/* header .form-search {
     margin-top: 20px;
 }
 .btn-success{
+    width: 90px;
+    height: 50px;
+    font-size: 15px;
     background-color: var(--style-color) !important;
     border: none;
     color: black;
@@ -87,7 +99,7 @@ header .form-search {
     border-radius: 0;
 }
 .formsearch{
-    width: 400px !important;
+    width: 200px !important;
     outline: none !important;
     outline-color: black !important;
 }
@@ -95,10 +107,7 @@ header .form-search {
     border-color: var(--style-color);
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-.form button {
-    width: 100px;
-}
+} */
 /* Sign in */
 
 /* try-free */
@@ -112,4 +121,9 @@ header .try-free {
 }
 header .try-free:hover {
     color: var(--style-color);
+}
+header .menu-bar {
+    width: 0px;
+    height: 0px;
+    margin: 0;
 }
