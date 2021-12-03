@@ -9,8 +9,16 @@
     header .header-right {
         margin-left: 100px;
     }
+    section.learn .khoi {
+        padding: 15px;
+        width: 230px;
+    }
 }
 @media (max-width:1024px) {
+    /* header */
+    header .row {
+        width: 0;
+    }
     header .menu-bar {
         position: absolute;
         right: 0;
@@ -28,7 +36,6 @@
         position: fixed;
         right: -200px;
         transform: translateX(-200px);
-        z-index: 1;
     }
     header .menu-bar span {
         position: relative;
@@ -68,21 +75,25 @@
     }
 
     #menu {
-        /* visibility: hidden; */
         position: fixed;
         right: 0;
         top: 0;
+        visibility: hidden;
+        opacity: 0;
         background-color: var(--main-background2-color);
         margin-top: 88px;
         width: 300px;
         height: 100vh;
         transform: translateX(300px);
         transition: all 0.3s ease;
+        z-index: 999;
     }
     #menu ul li {
         margin-top: 20px;
     }
     #menu.active {
+        visibility: visible;
+        opacity: 1;
         transform: translateX(0);
     }
     #menu li, .header-right li {
@@ -93,7 +104,6 @@
         line-height: 40px;
         margin-left: -5px;
         border-bottom: 1px solid;
-        
     }
     header .header-right {
         /* visibility: hidden; */
@@ -111,5 +121,44 @@
     header .header-right.active {
         /* visibility: hidden; */
         transform: translateX(40px);
+    }
+    section.learn {
+        height: 810px;
+    }
+    section.learn .learn-left {
+        margin: 0 15px;
+        margin-top: 0px;
+        width: auto;
+        height: 200px;
+    }
+    section.learn .khoi {
+        padding: 15px;
+        width: 230px;
+    }
+    section.learn .learn-right {
+        margin-top: 120px;
+        height: 300px;
+        margin-left: -100px;
+    }
+
+    @media (max-width:600px) {
+        section.banner {
+            width: 100%;
+            height: 412px;
+        }
+        section.banner .banner-left {
+            width: 80%;
+            height: 180px;
+            margin: 20px 0;
+        }
+        section.banner .banner-left .button-save {
+            margin: 40px 0;
+        }
+        section.banner .banner-left .button-save a {
+            padding: 15px 40px;
+        }
+        section.learn .learn-left {
+            margin-top: 0px;
+        }
     }
 }

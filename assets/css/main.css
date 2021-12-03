@@ -20,6 +20,8 @@ header {
     background-color: var(--main-background-color);
     width: 100%;
     height: 88px;
+    position: fixed;
+    z-index: 999;
 }
 header .container {
     max-width: 1400px;
@@ -83,6 +85,7 @@ header .container {
 }
 header .header-right {
     margin-left: 250px;
+    z-index: 999;
 }
 /* search-form */
 /* header .form-search {
@@ -126,4 +129,124 @@ header .menu-bar {
     width: 0px;
     height: 0px;
     margin: 0;
+}
+
+/* banner */
+section.banner {
+    padding-top: 88px;
+    width: 100%;
+    height: 512px;
+    background-image: linear-gradient(to right, #e40084, #911bcc, indigo);
+}
+section.banner .banner-left {
+    height: 210px;
+    margin: 40px 0;
+}
+section.banner .banner-left img {
+    width: 400px;
+}
+section.banner .banner-left .button-save {
+    margin: 80px 0;
+}
+section.banner .banner-left .button-save a {
+    padding: 15px 70px;
+    text-transform: uppercase;
+    background-color: #ffde17;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.3s ease;
+}
+section.banner .banner-left .button-save a:hover {
+    box-shadow: 0px 10px 10px 5px #333;
+}
+
+/* Learning */
+section.learn {
+    background-color: #000;
+    width: 100%;
+    height: 610px;
+}
+section.learn .container {
+    max-width: 1400px;
+}
+section.learn .learn-left {
+    margin-top: 70px;
+    width: auto;
+    height: 200px;
+}
+section.learn .khoi {
+    background-color:#333;
+    padding: 20px;
+    width: 300px;
+    height: 165px;
+    border-radius: 10px;
+    color: var(--main-color);
+}
+
+section.learn span {
+    text-transform: uppercase;
+    color: var(--style-color);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: auto;
+    
+}
+section.learn h5 {
+    color: var(--main-color);
+    font-size: 22px;
+    height: auto;
+
+}
+section.learn p {
+    color: #ddd;
+    height: auto;
+
+}
+section.learn h6 {
+    color: var(--main-color);
+    height: auto;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+}
+section.learn img {
+    margin-top: -140px;
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
+section.learn .learn-right {
+    margin-top: 120px;
+    height: 300px;
+}
+section.learn .learn-right span {
+    font-size: 16px;
+}
+section.learn .learn-right h5 {
+    font-size: 30px;
+    font-weight: 800;
+    width: 250px;
+    margin: 30px 0;
+}
+section.learn .learn-right p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 500px;
+}
+section.learn .learn-right h6 {
+    width: 130px;
+    height: auto;
+    float: left;
+}
+section.learn .learn-right a:hover i {
+    margin-left: 5px;
+}
+section.learn .learn-right i {
+    height: auto;
+    width: auto;
+    color: var(--style-color);
+    font-size: 22px;
+    transition: all 0.3s ease;
 }
