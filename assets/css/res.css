@@ -6,7 +6,13 @@
 
 }
 @media (max-width: 1400px) {
-    
+    /* banner-mid */
+    section.update span {
+        margin-left: 25px;
+    }
+    section.update h5 {
+        margin-left: 25px;
+    }
 }
 @media (min-width:1025px) and (max-width: 1224px) {
     header .header-right {
@@ -151,6 +157,10 @@
     section.new .new-left h5 {
         margin: 5px 0;
     }
+    @media (max-width: 991px) {
+        
+    }
+
     
     @media (max-width:767px) {
         section.banner {
@@ -233,7 +243,7 @@
             border-radius: 10px;
         }
         section.new .new-right img {
-            margin-top: 50px;
+            margin-top: 20px;
             height: 300px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
@@ -277,6 +287,12 @@
         /* new */
         section.new .new-right img {
             height: 280px;
+        }
+        /* banner-mid */
+        section.banner-mid .button-how a {
+            padding: 15px 25px;
+            text-transform: uppercase;
+            font-size: 12px;
         }
     }
     @media (max-width:430px) {

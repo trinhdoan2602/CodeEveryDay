@@ -330,3 +330,228 @@ section.new .new-right{
 section.new .new-right img {
     height: 450px;
 }
+/* new-bottom */
+section.new-bottom {
+    background-color: #181818;
+    height: auto;
+}
+section.new-bottom .container {
+    max-width: 1400px;
+}
+section.new-bottom .khoi {
+    background-color: var(--main-background-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+/* section.new-bottom .khoi:first-child {
+    margin-right: 30px;
+} */
+section.new-bottom img {
+    margin: 40px 10px 20px 30px;
+    width: 70%;
+    height: 23px;
+}
+section.new-bottom h5 {
+    margin: 10px 10px 20px 30px;
+    width: auto;
+    height: auto;
+    font-size: 33px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+section.new-bottom p {
+    margin: 30px 10px 20px 30px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    color: var(--main-color);
+}
+section.new-bottom h6 {
+    margin: 30px 10px 20px 30px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    color: var(--main-color);
+    float: left;
+}
+section.new-bottom a:hover i {
+    margin-left: 5px;
+}
+section.new-bottom i {
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    color: var(--style-color);
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+/* update */
+section.update {
+    background-color: #000;
+    height: auto;
+}
+section.update .container {
+    max-width: 1400px;
+}
+section.update span {
+    color: var(--style-color);
+    margin-top: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+    height: auto;
+}
+section.update h5 {
+    color:var(--main-color);
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 33px;
+    width: 100%;
+    height: auto;
+}
+section.update .khoi {
+    margin-bottom: 30px;
+}
+section.update img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+section.update h6 {
+    margin: 15px 0;
+    color: #ffba0e;
+    width: 100%;
+    height: auto;
+}
+section.update p {
+    margin: 15px 0;
+    color: var(--main-color);
+    width: 100%;
+    height: auto;
+}
+
+/* banner-mid */
+section.banner-mid {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+section.banner-mid .container {
+    max-width: 100%;
+}
+section.banner-mid img.img-left {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+}
+section.banner-mid .banner-mid-right {
+    background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+section.banner-mid .banner-mid-right img {
+    width: 16%;
+    height: auto;
+}
+section.banner-mid .banner-mid-right h5 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px 0;
+    width: auto;
+    height: auto;
+}
+section.banner-mid .banner-mid-right p {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 25px 0;
+    width: auto;
+    height: auto;
+}
+section.banner-mid .button-how {
+    width: auto;
+    height: auto;
+    margin: 40px 0;
+}
+section.banner-mid .button-how a {
+    padding: 15px 70px;
+    text-transform: uppercase;
+    background-color: #000;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+section.banner-mid .button-how  a:hover {
+    box-shadow: 0px 10px 10px 5px #333;
+}
+
+/* footer */
+footer {
+    background-color: #181818;
+    height: auto;
+    width: auto;
+}
+footer .container {
+    max-width: 100%;
+}
+footer .khoi {
+    margin: 60px 0;
+}
+footer .khoi h5 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+footer .khoi a {
+    display: block;
+    color: #7c7c7d;
+    font-weight: 500;
+    font-size: 13px;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+footer .khoi a:hover {
+    color: var(--main-color);
+}
+footer .footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+footer .footer-bottom img {
+    margin: -14px 0px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+footer .footer-bottom p {
+    font-size: 12px;
+    font-weight: 700;
+    /* margin-top: 14px; */
+    color: #7c7c7d;
+    display: inline;
+}
+footer .footer-bottom-mid a {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 10px;
+    color: var(--main-color);
+    display: inline;
+    height: 100%;
+}
+footer .footer-bottom-right a i {
+    font-size: 18px;
+    margin: 20px 10px;
+    color: var(--main-color);
+    display: inline;
+}
