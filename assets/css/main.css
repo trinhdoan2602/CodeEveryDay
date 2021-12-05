@@ -489,6 +489,163 @@ section.banner-mid .button-how a {
 section.banner-mid .button-how  a:hover {
     box-shadow: 0px 10px 10px 5px #333;
 }
+/* skills */
+section.skills {
+    background-color: #000;
+    height: auto;
+    padding: 50px 0 150px 0;
+}
+section.skills .title {
+    text-align: center;
+    padding-bottom: 100px;
+}
+section.skills .title h6 {
+    color: var(--style-color);
+    height: auto;
+    padding: 20px 0;
+}
+section.skills .title h5 {
+    color: var(--main-color);
+    height: auto;
+    font-size: 35px;
+    font-weight: bold;
+}
+section.skills .container {
+    max-width: 1300px;
+    padding-left: 40px;
+}
+section.skills .slide-skill {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+    border: 20px solid #000;
+}
+section.skills .slide-skill .top {
+    margin-top: 15px;
+    width: auto;
+}
+section.skills .slide-skill img {
+    width: auto;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+section.skills .slide-skill h6 {
+    width: auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+section.skills .slide-skill span {
+    width: auto;
+    font-size: 14px;
+}
+section.skills .slide-skill p {
+    width: auto;
+    font-size: 14px;
+}
+section.skills .slide-skill .mid {
+    width: auto;
+    margin: 10px 0;
+}
+section.skills .slide-skill .bottom {
+    width: auto;
+    margin-bottom: 10px;
+}
+section.skills .slide-skill i {
+    font-size: 18px;
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+
+/* nonpro */
+section.nonpro {
+    background-image: url("../images/nonpro.jpg");
+    height: auto;
+}
+section.nonpro .container {
+    max-width: 1400px;
+}
+section.nonpro img {
+    /* width: 100%; */
+    height: auto;
+}
+section.nonpro .nonpro-left {
+    height: auto;
+}
+section.nonpro img {
+    margin: 50px 0 0 0;
+    width: 190px;
+    height: 130px;
+    height: auto;
+}
+section.nonpro h5 {
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: bold;
+    height: auto;
+}
+section.nonpro p {
+    font-size: 16px;
+    color: var(--main-color);
+    margin: 23px 0;
+    height: auto;
+}
+section.nonpro h6 {
+    font-size: 16px;
+    padding: 18px 70px;
+    border: 1px solid var(--main-color);
+    margin: 23px 0 100px 0;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+section.nonpro a {
+    color: var(--main-color);
+    width: auto;  
+}
+section.nonpro a:hover h6, section.nonpro a:hover {
+    color: var(--style-color);
+    border: 1px solid var(--style-color);
+    transition: all 0.3s ease;
+}
+
+
+/* free */
+section.free {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+section.free .container {
+    max-width: 1600px;
+}
+section.free .free-left {
+    text-align: center;
+}
+section.free h5 {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 115px 0;
+}
+section.free .free-right {
+    text-align: center;
+    margin: 130px 0;
+}
+section.free a {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 70px;
+    background: linear-gradient(100.37deg, rgb(241, 90, 34) 0%, rgb(236, 0, 139) 100%);
+    
+}
+section.free a:hover {
+    background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+
+}
 
 /* footer */
 footer {

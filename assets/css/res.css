@@ -213,6 +213,13 @@
             margin-top: 30px;
             height: 350px;
         }
+        /* free */
+        section.free h5, section.free .free-right {
+            margin: 80px 0;
+        }
+        section.free a {
+            padding: 16px 30px;
+        }
     }
     @media (max-width:656px) {
         section.learn {
