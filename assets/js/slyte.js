@@ -5,6 +5,11 @@ menuBar.addEventListener("click", function(){
     document.querySelector("#menu").classList.toggle("active")
     document.querySelector(".header-right").classList.toggle("active")
 })
+// sign-in
+const signIn = document.querySelector(".sign-in")
+signIn.addEventListener("click", function(){
+    signIn.classList.toggle("active")
+})
 
 // slider-slick
 $('.responsive1').slick({

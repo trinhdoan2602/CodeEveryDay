@@ -113,6 +113,7 @@ header .header-right {
 } */
 /* Sign in */
 
+
 /* try-free */
 header .try-free {
     color: var(--main-color);
@@ -324,9 +325,7 @@ section.new .new-left i {
 }
 
 /* new-right */
-section.new .new-right{
-    /* height: 450px; */
-}
+
 section.new .new-right img {
     height: 450px;
 }
