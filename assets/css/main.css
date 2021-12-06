@@ -487,6 +487,93 @@ section.banner-mid .button-how a {
 section.banner-mid .button-how  a:hover {
     box-shadow: 0px 10px 10px 5px #333;
 }
+
+/* courses */
+section.courses {
+    height: auto;
+    background-color: rgb(39, 39, 39);
+    padding: 50px 0;
+}
+section.courses .container {
+    max-width: 1400px;
+}
+section.courses .course-title h1 {
+    height: auto;
+    margin-bottom: 10px;
+    color: var(--style-color);
+}
+section.courses p {
+    color: var(--main-color);
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+section.courses .course-title button {
+    width: auto;
+    background-color: transparent;
+    margin: 10px 12px;
+    border: none;
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+section.courses .course-title button.active {
+    color: var(--style-color);
+}
+section.courses .course-main {
+    display: none;
+    padding: 50px 30px;
+    width: auto;
+    border: 1px solid rgb(150, 150, 150);
+}
+section.courses .course-main.active {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.courses .course-main h2 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 23px;
+}
+section.courses .course-main button.explore {
+    color: white;
+    font-size: 15px;
+    border: 1px solid var(--main-color);
+    width: auto;
+    background-color: transparent;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
+}
+section.courses .course-main button:hover {
+    background-color: #333;
+}
+section.courses .course-main-title {
+    margin-bottom: 40px;
+}
+section.courses .course-main-slider .slider {
+    padding: 8px 8px;
+}
+section.courses .course-main-slider img {
+    width: 100%;
+    height: auto;
+}
+section.courses .course-main-slider h3 {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--main-color);
+}
+section.courses .course-main-slider h4 {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(168, 168, 168);
+}
+section.courses .course-main-slider h6 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-color);
+}
 /* skills */
 section.skills {
     background-color: #000;
