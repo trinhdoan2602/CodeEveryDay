@@ -16,7 +16,8 @@ a {
     text-decoration: none !important;
 }
 section.sign-in {
-    width: auto;
+    background-color: #212121;
+    width: 100%;
     height: auto;
 }
 
@@ -41,7 +42,7 @@ section .sign-in-left .title h5 {
 }
 
 section.sign-in form {
-    margin: 50px 80px;
+    margin: 50px 50px;
     width: auto;
     height: auto;
 }
