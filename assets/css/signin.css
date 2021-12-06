@@ -10,7 +10,6 @@ html, body {
     --main-background-color: #212121;
     --main-color: #ffffff;
     --style-color: #e40084;
-
 }
 a {
     text-decoration: none !important;
@@ -105,9 +104,3 @@ section.sign-in .sign-in-left .footer p a {
     color: #ddd;
     text-decoration: unset;
 }
-/* 
-section.sign-in .sign-in-right {
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-} */
