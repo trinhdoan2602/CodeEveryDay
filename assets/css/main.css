@@ -135,15 +135,21 @@ header .menu-bar {
 section.banner {
     padding-top: 88px;
     width: 100%;
-    height: 512px;
+    height: auto;
     background-image: linear-gradient(to right, #e40084, #911bcc, indigo);
 }
+section.banner .container {
+    max-width: 1400px;
+}
 section.banner .banner-left {
-    height: 210px;
-    margin: 40px 0;
+    height: auto;
+    width: auto;
+    padding-left: 30px;
 }
 section.banner .banner-left img {
-    width: 400px;
+    width: 100%;
+    height: auto;
+    margin-top: 88px;
 }
 section.banner .banner-left .button-save {
     margin: 80px 0;
@@ -163,23 +169,24 @@ section.banner .banner-left .button-save a:hover {
 /* Learning */
 section.learn {
     background-color: #000;
-    width: 100%;
-    height: 610px;
+    width: auto;
+    height: auto;
 }
 section.learn .container {
     max-width: 1400px;
 }
 section.learn .learn-left {
-    margin-top: 70px;
+    margin: 50px 0;
     width: auto;
-    height: 200px;
+    height: auto;
 }
 section.learn .khoi {
     background-color:#333;
     padding: 20px;
-    width: 300px;
-    height: 165px;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border: 20px solid #000;
+    border-radius: 30px;
     color: var(--main-color);
 }
 
@@ -190,36 +197,41 @@ section.learn span {
     font-weight: bold;
     letter-spacing: 1px;
     height: auto;
-    
+    width: auto;
+}
+section.learn img {
+    width: 80px;
+    height: 80px;
+    float: right;
+    /* display: inline-block; */
+
 }
 section.learn h5 {
     color: var(--main-color);
     font-size: 22px;
     height: auto;
+    width: auto;
 
 }
 section.learn p {
     color: #ddd;
     height: auto;
+    width: auto;
 
 }
 section.learn h6 {
     color: var(--main-color);
     height: auto;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     display: flex;
 }
-section.learn img {
-    margin-top: -140px;
-    width: 100px;
-    height: 100px;
-    float: right;
-
-}
 section.learn .learn-right {
-    margin-top: 120px;
-    height: 300px;
+    height: auto;
+    width: auto;
+    padding-left: 20px;
+    margin: auto 0;
 }
 section.learn .learn-right span {
     font-size: 16px;
@@ -227,18 +239,19 @@ section.learn .learn-right span {
 section.learn .learn-right h5 {
     font-size: 30px;
     font-weight: 800;
-    width: 250px;
+    width: auto;
     margin: 30px 0;
 }
 section.learn .learn-right p {
     font-size: 16px;
     font-weight: 600;
-    width: 500px;
+    width: auto;
 }
 section.learn .learn-right h6 {
-    width: 130px;
+    width: auto;
     height: auto;
     float: left;
+    margin-bottom: 30px;
 }
 section.learn .learn-right a:hover i {
     margin-left: 5px;
@@ -254,7 +267,7 @@ section.learn .learn-right i {
 /* new */
 
 section.new {
-    height: 700px;
+    height: auto;
     width: 100%;
     background-color: #181818;
 }
@@ -277,12 +290,14 @@ section.new h5 {
     height: auto;
 }
 section.new .new-left {
-    width: 680px;
-    height: 450px;
+    width: auto;
+    height: auto;
     padding: 0 30px;
+    border-left: 30px solid #181818;
     background-color: #212121;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    margin-bottom: 30px;
 }
 section.new .new-left img{
     margin-top: 50px;
@@ -308,8 +323,9 @@ section.new .new-left p {
 section.new .new-left h6.learn-more {
     color: var(--main-color);
     height: auto;
-    width: 90px;
+    width: auto;
     float: left;
+    margin-bottom: 30px;
 }
 section.new .new-left a:hover i {
     margin-left: 5px;
@@ -326,28 +342,32 @@ section.new .new-left i {
 /* new-right */
 
 section.new .new-right img {
-    height: 450px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 /* new-bottom */
 section.new-bottom {
     background-color: #181818;
     height: auto;
+    width: auto;
+    padding-left: 25px;
 }
 section.new-bottom .container {
     max-width: 1400px;
 }
 section.new-bottom .khoi {
     background-color: var(--main-background-color);
-    border-radius: 10px;
+    border-radius: 25px;
+    border: 15px solid #181818;
     margin-bottom: 30px;
+    width: auto;
+    height: auto;
 }
-/* section.new-bottom .khoi:first-child {
-    margin-right: 30px;
-} */
 section.new-bottom img {
     margin: 40px 10px 20px 30px;
-    width: 70%;
-    height: 23px;
+    width: auto;
+    height: auto;
 }
 section.new-bottom h5 {
     margin: 10px 10px 20px 30px;
@@ -395,6 +415,7 @@ section.update .container {
 section.update span {
     color: var(--style-color);
     margin-top: 80px;
+    margin-left: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     width: 100%;
@@ -403,13 +424,15 @@ section.update span {
 section.update h5 {
     color:var(--main-color);
     margin: 20px 0;
+    margin-left: 20px;
     font-weight: bold;
     font-size: 33px;
     width: 100%;
     height: auto;
 }
 section.update .khoi {
-    margin-bottom: 30px;
+    margin: 30px 0;
+
 }
 section.update img {
     border-radius: 10px;
@@ -436,12 +459,14 @@ section.banner-mid {
     background-color: #000;
 }
 section.banner-mid .container {
+    margin-left: 13px;
     max-width: 100%;
 }
 section.banner-mid img.img-left {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    padding: 0;
 
 }
 section.banner-mid .banner-mid-right {
@@ -658,6 +683,7 @@ section.nonpro img {
 }
 section.nonpro .nonpro-left {
     height: auto;
+    margin-left: 15px;
 }
 section.nonpro img {
     margin: 50px 0 0 0;
@@ -708,11 +734,13 @@ section.free .container {
 }
 section.free .free-left {
     text-align: center;
+    padding-left: 15px;
 }
 section.free h5 {
     color: var(--main-color);
     font-size: 40px;
     font-weight: bold;
+    padding-left: 15px;
     margin: 115px 0;
 }
 section.free .free-right {
@@ -742,6 +770,7 @@ footer .container {
     max-width: 100%;
 }
 footer .khoi {
+    padding-left: 50px;
     margin: 60px 0;
 }
 footer .khoi h5 {
@@ -767,7 +796,7 @@ footer .khoi a:hover {
     color: var(--main-color);
 }
 footer .footer-bottom {
-    padding: 20px 0;
+    padding: 20px 20px;
     border-top: 1px solid #333;
 }
 footer .footer-bottom img {

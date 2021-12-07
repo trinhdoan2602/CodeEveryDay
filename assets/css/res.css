@@ -18,10 +18,6 @@
     header .header-right {
         margin-left: 100px;
     }
-    section.learn .khoi {
-        padding: 15px;
-        width: 230px;
-    }
 
 }
 @media (max-width:1024px) {
@@ -132,88 +128,10 @@
         /* visibility: hidden; */
         transform: translateX(40px);
     }
-    section.learn {
-        height: 810px;
-    }
-    section.learn .learn-left:first-child {
-        margin-top: 20px;
-    }
-    section.learn .learn-left {
-        margin: 0 15px;
-        margin-top: 0px;
-        width: auto;
-        height: 200px;
-    }
-    section.learn .khoi {
-        padding: 15px;
-        width: 230px;
-    }
-    section.learn .learn-right {
-        margin-top: 120px;
-        height: 300px;
-        margin-left: -100px;
-    }
-    /* new */
-    section.new .new-left h5 {
-        margin: 5px 0;
-    }
-    @media (max-width: 991px) {
-        
-    }
 
     
     @media (max-width:767px) {
-        section.banner {
-            width: 100%;
-            height: 412px;
-        }
-        section.banner .banner-left {
-            width: 80%;
-            height: 180px;
-            margin: 20px 0;
-        }
-        section.banner .banner-left .button-save {
-            margin: 40px 0;
-        }
-        section.banner .banner-left .button-save a {
-            padding: 15px 40px;
-        }
-        section.learn {
-            height: 410px;
-        }
-        section.learn .learn-left {
-            margin-top: 0px;
-        }
         
-        section.learn .learn-left.python-kt {
-            margin-top: 20px;
-        }
-        section.learn .learn-right {
-            background-color: #181818;
-            margin-top: 30px;
-            margin-left: 50px;
-            /* padding: 0 700px 0 60px ; */
-            height: 320px;
-        }
-        /* new */
-        section.new {
-            height: 1300px;
-        }
-        section.new span {
-            margin-top: 400px;
-        }
-        section.new .new-left {
-            width: 680px;
-            height: 350px;
-            margin-top: 0px;
-            margin-left: 16px;
-            border-radius: 10px;
-        }
-        section.new .new-right img {
-            margin-top: 30px;
-            height: 350px;
-        }
-        /* free */
         section.free h5, section.free .free-right {
             margin: 80px 0;
         }
@@ -221,121 +139,19 @@
             padding: 16px 30px;
         }
     }
-    @media (max-width:656px) {
-        section.learn {
-            height: 810px;
-        }
-        section.learn .learn-right {
-            margin-top: 20px;
-            margin-left: 30px;
-            /* padding: 0 700px 0 60px ; */
-            height: 350px;
-        }
-        section.learn .learn-right p {
-            font-size: 16px;
-            font-weight: 600;
-            width: 350px;
-        }
-        section.learn .learn-left.python-kt {
-            margin-top: 0px;
-        }
-        /* new */
-        section.new {
-            height: 135 0px;
-        }
-        section.new .new-left {
-            width: 680px;
-            height: 450px;
-            margin-left: 14px;
-            border-radius: 10px;
-        }
-        section.new .new-right img {
-            margin-top: 20px;
-            height: 300px;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
-
-        }
-
-    }
     @media (max-width:600px) {
-        section.banner {
-            width: 100%;
-            height: 412px;
-        }
-        section.banner .banner-left {
-            width: 80%;
-            height: 180px;
-            margin: 20px 0;
-        }
         section.banner .banner-left .button-save {
-            margin: 40px 0;
+            margin: 50px 0;
         }
         section.banner .banner-left .button-save a {
-            padding: 15px 40px;
+            padding: 15px 30px;
         }
-        section.learn {
-            height: 810px;
-        }
-        section.learn .learn-left {
-            margin-top: 0px;
-        }
-        section.learn .learn-right {
-            /* padding: 0 700px 0 40px ; */
-            margin-top: 20px;
-            margin-left: 30px;
-            height: 370px;
-        }
-        section.learn .learn-right p {
-            font-size: 16px;
-            font-weight: 600;
-            width: 350px;
-        }
-        /* new */
-        section.new .new-right img {
-            height: 280px;
-        }
-        /* banner-mid */
         section.banner-mid .button-how a {
-            padding: 15px 25px;
-            text-transform: uppercase;
-            font-size: 12px;
+            padding: 15px 20px;
+            font-size: 14px;
         }
-    }
-    @media (max-width:430px) {
-        section.learn .learn-right {
-            /* padding: 0 500px 0 30px ; */
-            margin-top: 20px;
-            margin-left: 30px;
-            height: 450px;
-        }
-        section.learn .learn-right p {
-            font-size: 16px;
-            font-weight: 600;
-            width: 220px;
-            
-        }
-        /* new */
-        section.new {
-            height: 1500px;
-        }
-        section.new span {
-            margin-top: 500px;
-        }
-        section.new .new-left {
-            height: 530px;
-        }
-        section.new .new-right img {
-            height: 250px;
-        }
-    }
-    @media (max-width:350px) {
-        /* new */
-        section.new {
-            height: 1600px;
-        }
-        section.new .new-left {
-            height: 600px;
+        section.new-bottom img {
+            width: 180px;
         }
     }
 }

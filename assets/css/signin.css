@@ -11,6 +11,9 @@ html, body {
     --main-color: #ffffff;
     --style-color: #e40084;
 }
+body {
+    background-color: var(--main-background-color);
+}
 a {
     text-decoration: none !important;
 }
@@ -24,6 +27,7 @@ section .sign-in-left {
     height: 100vh;
     width: 100%;
     background-color: var(--main-background-color);
+    padding-left: 50px;
 }
 section .sign-in-left .title {
     padding-top: 150px;
@@ -83,6 +87,9 @@ section.sign-in .sign-in-left .create {
 @media(max-width: 500px) {
     section.sign-in form, section.sign-in .sign-in-left .create {
         margin: 30px 20px;
+    }
+    section .sign-in-left .title {
+        padding-top: 50px;
     }
 }
 section.sign-in .sign-in-left .create button {
