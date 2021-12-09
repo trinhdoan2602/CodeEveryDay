@@ -82,34 +82,77 @@ function renderCourses(courses) {
     });
 }
 
+const skillsApi = "http://localhost:3000/skills/"
+function start1() {
+    getSkills(renderSkills)
+}
 
-$('.responsive1').slick({
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true
+start1();
+
+//Functions
+function getSkills(callback) {
+    fetch(skillsApi)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(callback);
+}
+
+function renderSkills(skills) {
+    const listSkills =
+        document.querySelector('.row.responsive1')
+    // console.log(listCourses);
+    const getData = skills.map(function (skill) {
+        return `<div class="slide-skill">
+                    <div class="top">
+                        <img src=${skill.img} alt="">
+                        <h6>${skill.name}</h6>
+                        <span>${skill.twitter}</span>
+                    </div>
+                    <div class="mid">
+                        <p>${skill.comment}</p>
+                    </div>
+                    <div class="bottom">
+                        <i class='bx bx-message-rounded'></i>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>`;
+
+    });
+    listSkills.innerHTML = getData.join(' ')
+    // slider - slick
+    $('.responsive1').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    // console.log(getData);
+    // console.log(listSkills);
+}
+
 
 // menu
 const menuBar = document.querySelector(".menu-bar")
