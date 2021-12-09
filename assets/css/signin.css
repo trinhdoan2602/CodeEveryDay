@@ -66,6 +66,19 @@ section.sign-in form input {
 section.sign-in form button:hover {
     background-color: var(--style-color);
 }
+section.sign-in .login-alert {
+    display: none;
+    margin-top: 10px;
+    margin: 0 50px;
+    padding: 10px;
+    width: auto;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: left;
+    color: #d31a17;
+    transition: 0.5s;
+  }
 section.sign-in .sign-in-left-mid {
     text-align: center;
     width: 100%;
@@ -91,6 +104,9 @@ section.sign-in .sign-in-left .create {
     section .sign-in-left .title {
         padding-top: 50px;
     }
+    section.sign-in .login-alert {
+        margin: 0 20px;
+      }
 }
 section.sign-in .sign-in-left .create button {
     width: 100%;
