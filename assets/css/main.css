@@ -86,35 +86,12 @@ header .header-right {
     margin-left: 250px;
     z-index: 999;
 }
-/* search-form */
-/* header .form-search {
-    margin-top: 20px;
-}
-.btn-success{
-    width: 90px;
-    height: 50px;
-    font-size: 15px;
-    background-color: var(--style-color) !important;
-    border: none;
-    color: black;
-    padding: 7px 10px;
-    border-radius: 0;
-}
-.formsearch{
-    width: 200px !important;
-    outline: none !important;
-    outline-color: black !important;
-}
-.formsearch:focus{
-    border-color: var(--style-color);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-} */
+
 /* Sign in */
 
 
 /* try-free */
-header .try-free {
+/* header .try-free {
     color: var(--main-color);
     border: 1px solid;
     padding: 8px 22px;
@@ -129,7 +106,7 @@ header .menu-bar {
     width: 0px;
     height: 0px;
     margin: 0;
-}
+} */
 
 /* banner */
 section.banner {

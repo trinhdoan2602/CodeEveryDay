@@ -3,6 +3,10 @@ const usersJson = [
     {
         username: 'trinhdoan2602',
         password: '123'
+    },
+    {
+        username: 'trinhdoan',
+        password: '123'
     }
 ]
 const handleLogin = () => {
@@ -14,17 +18,18 @@ const handleLogin = () => {
     window.localStorage.setItem('usersLocalStrorage', JSON.stringify(usersJson))
     //compare usersJson and object
     submitLogin.onclick = () => {
-        const user = {
-            username: usernameInput.value,
-            password: passwordInput.value
-        }
         
         const arrayUsersJson = JSON.parse(window.localStorage.getItem('usersLocalStrorage'));
         const isUser = arrayUsersJson.some(arrayUserJson => {
-            return (arrayUserJson.username == user.username && arrayUserJson.password == user.password) ? true : false
+            return (arrayUserJson.username == usernameInput.value && arrayUserJson.password == passwordInput.value) ? true : false
 
         })
         if (isUser) {
+            const userLogin = {
+                username: usernameInput.value,
+                password: passwordInput.value
+            }
+            window.localStorage.setItem('currentUser', JSON.stringify(userLogin))
             window.location.href = "index.html"
         } else {
             document.querySelector('.login-alert').style.display = 'block'

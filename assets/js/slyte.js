@@ -1,4 +1,5 @@
 
+
 const courseApi = "http://localhost:3000/courses/"
 
 function start() {
@@ -154,6 +155,7 @@ function renderSkills(skills) {
 }
 
 
+
 // menu
 const menuBar = document.querySelector(".menu-bar")
 menuBar.addEventListener("click", function () {
@@ -184,6 +186,27 @@ courseTitle.addEventListener("click", function (x) {
 
 })
 
+const setUserName = () => {
+    const changeName = document.querySelector('li a.sign-in h6')
+    const currentUser = JSON.parse(window.localStorage.getItem('currentUser'));
+    const username = currentUser.username;
 
+    const logout = {
+        username: null,
+        password: null
+    }
+
+    if (currentUser.username == null && currentUser.password == null) {
+        changeName.innerText = 'Sign in'
+    }
+    else{
+        changeName.innerText = 'Logout'+username
+    }
+    changeName.onclick = () => {
+        window.localStorage.setItem('currentUser', JSON.stringify(logout))
+        changeName.innerText = 'Sign in'
+    }
+}
+setUserName()
 
 
