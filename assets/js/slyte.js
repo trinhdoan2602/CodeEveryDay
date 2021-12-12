@@ -200,11 +200,11 @@ const setUserName = () => {
         changeName.innerText = 'Sign in'
     }
     else{
-        changeName.innerText = 'Logout'+username
+        changeName.innerText = 'Xin chào '+username
     }
     changeName.onclick = () => {
         window.localStorage.setItem('currentUser', JSON.stringify(logout))
-        changeName.innerText = 'Sign in'
+        // changeName.innerText = 'Sign innnn'
     }
 }
 setUserName()

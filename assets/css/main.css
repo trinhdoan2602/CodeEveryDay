@@ -62,7 +62,6 @@ header .container {
     width: 120px;
     height: auto;
     display: inline-block;
-    height: 40px;
     line-height: 40px;
     margin-left: -5px;
     
@@ -88,7 +87,19 @@ header .header-right {
 }
 
 /* Sign in */
-
+header .header-right .sign-in {
+    width: auto;
+    height: auto;
+}
+/* Logout */
+header .header-right a.log-out {
+    width: auto;
+    height: auto;
+    /* visibility: hidden; */
+}
+header .header-right a.log-out:hover {
+    color: var(--style-color);
+}
 
 /* try-free */
 /* header .try-free {

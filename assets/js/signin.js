@@ -1,3 +1,10 @@
+// Event Enter Login
+document.getElementById('password').onkeypress=function(e){
+    if(e.keyCode==13){
+        document.getElementById('form-submit').click();
+    }
+}
+
 // renderData()
 const usersJson = [
     {
@@ -14,7 +21,7 @@ const handleLogin = () => {
     const passwordInput = document.querySelector('#password')
     const submitLogin = document.querySelector('.form-submit')
 
-    //Save usersJson to LocalStorage
+    //Lưu usersJson đến LocalStorage và dùng stingify để chuyển đổi kiểu dữ liệu js qua json
     window.localStorage.setItem('usersLocalStrorage', JSON.stringify(usersJson))
     //compare usersJson and object
     submitLogin.onclick = () => {
@@ -30,9 +37,11 @@ const handleLogin = () => {
                 password: passwordInput.value
             }
             window.localStorage.setItem('currentUser', JSON.stringify(userLogin))
+            alert("Đăng nhập thành công")
             window.location.href = "index.html"
         } else {
             document.querySelector('.login-alert').style.display = 'block'
+            alert("Thông tin tài khoản hoặc mật khẩu không đúng. Vui lòng nhập lại!")
             document.querySelector('.login-alert').innerText = 'Thông tin đăng nhập không hợp lệ!'
         }
     }
