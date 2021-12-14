@@ -2,6 +2,11 @@
   "userJson": [
     {
       "id": 1,
+      "username": "trinhdoan",
+      "password": 123
+    },
+    {
+      "id": 2,
       "username": "trinhdoan2602",
       "password": 123
     }
@@ -12,42 +17,47 @@
       "img": "./assets/images/course-python-1.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.99"
+      "sliderH6": 19
     },
     {
       "img": "./assets/images/course-python-2.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.98",
+      "sliderH6": 20,
       "id": 2
+
     },
     {
       "img": "./assets/images/course-python-3.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.97",
+      "sliderH6": 21,
       "id": 3
+
     },
     {
       "img": "./assets/images/course-python-4.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.96",
+      "sliderH6": 22,
       "id": 4
+
     },
     {
       "img": "./assets/images/course-python-5.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.95",
+      "sliderH6": 23,
       "id": 5
+
     },
     {
       "img": "./assets/images/course-python-6.jpg",
       "sliderH3": "2022 Complete Python Bootcamp From Zero to Hero in Python",
       "sliderH4": "Jose Portilla",
-      "sliderH6": "A$19.94",
+      "sliderH6": 24,
       "id": 6
+
     }
   ],
   "skills": [

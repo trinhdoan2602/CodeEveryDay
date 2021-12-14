@@ -20,20 +20,40 @@ function getCourses(callback) {
 function renderCourses(courses) {
     const listCourses =
         document.querySelectorAll('.course-main-slider')
-    // console.log(listCourses);
+    // console.log("courses",courses);
     for (let i = 0; i < listCourses.length; i++) {
         let listCourse = listCourses[i]
         const getData = courses.map(function (course) {
-            return `<a href="#" class="slider">
-            <img src="${course.img}" alt="">
-            <h3>${course.sliderH3}</h3>
-            <h4>${course.sliderH4}</h4>
-            <h6>${course.sliderH6}</h6>
-        </a> `;
-
+            return `
+                <a id="${course.id}" href="#" class="slider">
+                    <img src="${course.img}" alt="">
+                    <h3>${course.sliderH3}</h3>
+                    <h4>${course.sliderH4}</h4>
+                    <h6>A$${course.sliderH6}</h6>
+                </a> 
+        `;
         });
         listCourse.innerHTML = getData.join(' ')
+
     }
+    
+    const courseItems = document.querySelectorAll('.slider')
+    // console.log(courseItems);
+    const courseId = []
+    courseItems.forEach(item1 => {
+        item1.onclick = () => {
+            courseId.push(Number(item1.id))
+            console.log(courseId);
+            const findCourseById = courses.filter(items => {
+                return courseId.some(id => items.id == id)
+            })
+            console.log(findCourseById);
+            const getCourses = findCourseById.reduce((a, b) => {
+                return b.sliderH6 + a
+            }, 0)
+            console.log(getCourses);
+        }
+    })
 
     // console.log(getData);
     // console.log(listCourses);
@@ -82,6 +102,9 @@ function renderCourses(courses) {
         ]
     });
 }
+
+
+
 
 const skillsApi = "http://localhost:3000/skills/"
 function start1() {

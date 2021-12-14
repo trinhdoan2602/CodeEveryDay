@@ -1,6 +1,6 @@
 // Event Enter Login
-document.getElementById('password').onkeypress=function(e){
-    if(e.keyCode==13){
+document.getElementById('password').onkeypress = function (e) {
+    if (e.keyCode == 13) {
         document.getElementById('form-submit').click();
     }
 }
@@ -9,11 +9,11 @@ document.getElementById('password').onkeypress=function(e){
 const usersJson = [
     {
         username: 'trinhdoan2602',
-        password: '123'
+        password: 'trinhdoan2602'
     },
     {
-        username: 'trinhdoan',
-        password: '123'
+        username: 'trinhdoan2k',
+        password: 'trinhdoan2k'
     }
 ]
 const handleLogin = () => {
@@ -25,25 +25,79 @@ const handleLogin = () => {
     window.localStorage.setItem('usersLocalStrorage', JSON.stringify(usersJson))
     //compare usersJson and object
     submitLogin.onclick = () => {
-        
+
         const arrayUsersJson = JSON.parse(window.localStorage.getItem('usersLocalStrorage'));
         const isUser = arrayUsersJson.some(arrayUserJson => {
             return (arrayUserJson.username == usernameInput.value && arrayUserJson.password == passwordInput.value) ? true : false
 
         })
-        if (isUser) {
-            const userLogin = {
-                username: usernameInput.value,
-                password: passwordInput.value
+        // Tối thiểu tám ký tự, ít nhất một chữ cái và một số:
+        var specialChars = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
+        var checkPass = function (string) {
+            for (let i = 0; i < specialChars.length; i++) {
+                if (string.indexOf(specialChars[i]) > -1) {
+                    return true;
+                }
             }
-            window.localStorage.setItem('currentUser', JSON.stringify(userLogin))
-            alert("Đăng nhập thành công")
-            window.location.href = "index.html"
-        } else {
-            document.querySelector('.login-alert').style.display = 'block'
-            alert("Thông tin tài khoản hoặc mật khẩu không đúng. Vui lòng nhập lại!")
-            document.querySelector('.login-alert').innerText = 'Thông tin đăng nhập không hợp lệ!'
+            return false;
         }
+        // console.log(checkPass(usernameInput.value) && checkPass(passwordInput.value));
+        if (usernameInput.value == "" || usernameInput.value == null) {
+            document.querySelector('.login-alert').style.display = 'block'
+            document.querySelector('.login-alert').innerText = 'Bạn chưa nhập tài khoản!'
+        }
+        else if (usernameInput.value.length < 8) {
+            document.querySelector('.login-alert').style.display = 'block'
+            document.querySelector('.login-alert').innerText = 'Tài khoản của bạn phải hơn 8 ký tự!'
+        }
+        else if (passwordInput.value == "" || passwordInput.value == null) {
+            document.querySelector('.login-alert').style.display = 'block'
+            document.querySelector('.login-alert').innerText = 'Bạn chưa nhập mật khẩu!'
+        }
+        else if (passwordInput.value.length < 8) {
+            document.querySelector('.login-alert').style.display = 'block'
+            document.querySelector('.login-alert').innerText = 'Mật khẩu của bạn phải hơn 8 ký tự!'
+        }
+        else if (checkPass(usernameInput.value) && checkPass(passwordInput.value)) {
+            if (isUser) {
+                const userLogin = {
+                    username: usernameInput.value,
+                    password: passwordInput.value
+                }
+                window.localStorage.setItem('currentUser', JSON.stringify(userLogin))
+                alert("Đăng nhập thành công")
+                window.location.href = "index.html"
+            } else {
+                document.querySelector('.login-alert').style.display = 'block'
+                document.querySelector('.login-alert').innerText = 'Thông tin đăng nhập không hợp lệ!'
+            }
+        }
+        else {
+            document.querySelector('.login-alert').style.display = 'block'
+            document.querySelector('.login-alert').innerText = 'Tài khoản hoặc mật khẩu phải tối thiểu tám ký tự, ít nhất một chữ cái và một số và không có ký tự đặc biệt!'
+
+        }
+        // if (checkPass(usernameInput.value) && checkPass(passwordInput.value)) {
+        //     if (isUser) {
+        //         const userLogin = {
+        //             username: usernameInput.value,
+        //             password: passwordInput.value
+        //         }
+        //         window.localStorage.setItem('currentUser', JSON.stringify(userLogin))
+        //         alert("Đăng nhập thành công")
+        //         window.location.href = "index.html"
+        //     } else {
+        //         document.querySelector('.login-alert').style.display = 'block'
+        //         document.querySelector('.login-alert').innerText = 'Thông tin đăng nhập không hợp lệ!'
+        //     }
+        // }
+        // else {
+        //     document.querySelector('.login-alert').style.display = 'block'
+        //     document.querySelector('.login-alert').innerText = 'Tài khoản hoặc mật khẩu phải tối thiểu tám ký tự, ít nhất một chữ cái và một số và không có ký tự đặc biệt!'
+
+        // }
+
     }
+
 }
 handleLogin()

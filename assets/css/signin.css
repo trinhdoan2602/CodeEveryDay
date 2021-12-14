@@ -43,7 +43,9 @@ section .sign-in-left .title h5 {
     color: var(--main-color);
     letter-spacing: 3px;
 }
-
+section.sign-in .registration-form {
+    height: auto;
+}
 section.sign-in form {
     margin: 50px 50px;
     width: auto;
