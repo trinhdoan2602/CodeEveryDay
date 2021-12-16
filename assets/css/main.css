@@ -587,6 +587,52 @@ section.courses .course-main-slider h6 {
     font-weight: bold;
     color: var(--main-color);
 }
+/* courses-cart */
+section.courses .course-main-cart {
+    height: auto;
+    width: auto;
+    margin: 20px;
+}
+section.courses .course-main-cart img {
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    float: left;
+}
+section.courses .course-main-cart h3.cartH3 {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    color: var(--main-color);
+}
+section.courses .course-main-cart h4 {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(168, 168, 168);
+}
+section.courses .course-main-cart h6 {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+section.courses h2.total {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+section.courses h2.total span{
+    color: var(--style-color);
+    font-size: 16px;
+}
+
 /* skills */
 section.skills {
     background-color: #000;

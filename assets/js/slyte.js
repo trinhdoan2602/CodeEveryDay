@@ -36,7 +36,7 @@ function renderCourses(courses) {
         listCourse.innerHTML = getData.join(' ')
 
     }
-    
+
     const courseItems = document.querySelectorAll('.slider')
     // console.log(courseItems);
     const courseId = []
@@ -52,6 +52,29 @@ function renderCourses(courses) {
                 return b.sliderH6 + a
             }, 0)
             console.log(getCourses);
+
+            
+            // Cart
+            let listCourses = ``
+            let total = ``
+            const listCoursesCart = document.querySelector('#coursescart')
+            findCourseById.forEach(course => {
+                listCourses += `
+                <div class="course-main-cart">
+                    <img src="${course.img}" alt="">
+                    <h3 class="cartH3">${course.sliderH3}</h3>
+                    <h4 class="cartH4">${course.sliderH4}</h4>
+                    <h6 class="cartH6">A$${course.sliderH6}</h6>
+                </div>
+                `;
+            })
+            // Total courses you select
+            total += `
+                <h2 class="total">
+                    <span>Tổng cộng: </span> $${getCourses}
+                </h2>
+                    `
+            listCoursesCart.innerHTML = listCourses + total
         }
     })
 
@@ -102,8 +125,6 @@ function renderCourses(courses) {
         ]
     });
 }
-
-
 
 
 const skillsApi = "http://localhost:3000/skills/"
@@ -222,8 +243,8 @@ const setUserName = () => {
     if (currentUser.username == null && currentUser.password == null) {
         changeName.innerText = 'Sign in'
     }
-    else{
-        changeName.innerText = 'Xin chào '+username
+    else {
+        changeName.innerText = 'Xin chào ' + username
     }
     changeName.onclick = () => {
         window.localStorage.setItem('currentUser', JSON.stringify(logout))
